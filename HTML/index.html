@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/Responsive.css">
+    <title>Strong Password Generator - Password Generator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-top">
+            <h1>Create Strong & Random Passwords</h1>
+            <p>Create strong & secure passwords with our advanced Tool
+            </p>
+        </div>
+        <div class="main-bottom">
+            <div class="bottom-left">
+                <div class="left-1">
+                    <input placeholder="Enter your name here" id="text" type="text" class="input">
+                </div>
+                <div class="left-2">
+                    <h2>Password Length</h2>
+                    <input type="range" value="8" id="range" step="1" max="20">
+                    <h2 id="range-value">20</h2>
+                </div>
+
+                <div class="left-3">
+                    <div class="left-3-left">
+                        <div class="uppercase all-content-center">
+                            <label for="include-uppercase">Inculde UPPERCASE</label>
+                            <input id="include-uppercase" type="checkbox">
+                        </div>
+                        <div class="lowercase all-content-center">
+                            <label for="Inculde lovwercase">Inculde lovwercase</label>
+                            <input id="include-lowercase" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="left-3-right">
+                        <div class="number all-content-center">
+                            <label for="Inculde Numbers">Inculde Numbers</label>
+                            <input id="include-numbers" type="checkbox">
+                        </div>
+                        <div class="symbols all-content-center">
+                            <label for="inculde-symbols">Inculde Symbols</label>
+                            <input id="include-symbols" type="checkbox">
+                        </div>
+                    </div>
+                    <!-- 
+                     -->
+                </div>
+                <div class="left-4">
+                    <button onclick="Generate()" id="generate">Generate</button>
+                    <button onclick="RandomGenerate()">Random Generate</button>
+                </div>
+                <div class="left-5"></div>
+            </div>
+            <div class="bottom-right">
+                <div class="bottom-right-up">
+
+                    <h1>Your Password is</h1>
+                    <h1 style="font-weight: 100; color: grey;" id="password">Nothing here</h1>
+                    <button id="copy">Copy Password</button>
+                </div>
+                <div class="bottom-right-down ">
+                    <img style="width: 60%;" src="/Ad.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JavaScript/Script.js"></script>
+</body>
+
+</html>
